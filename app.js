@@ -62,7 +62,7 @@ passport.deserializeUser(function(id, done){
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/auth/google/list',
+    callbackURL: 'https://damp-taiga-63158.herokuapp.com/auth/google/list',
     userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo'
 }, 
 function(accesToke, refreshToken, profile, cb){

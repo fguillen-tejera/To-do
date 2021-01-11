@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+    <main class="form-signin">
+        <form method="post" action="/register">
+            <h2 class="h3 mb-3 fw-normal">Take your to-do List anywhere!</h2>
+            <input type="email" name="username" class="form-control top" placeholder="Email" required autofocus>
+            <input type="password" name="password" class="form-control middle" placeholder="Password" required>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" style="margin-top: 10px;">Sign me up!</button>
+        </form>
+
+
+        <div class="or-container">
+            <div class="line-separator"></div>
+            <div class="or-label">or</div>
+            <div class="line-separator"></div>
+        </div>
+
+        <div> <a class="btn btn-lg btn-block btn-light " href="/auth/google">
+                <i class="fab icon fa-google"></i> Register with Google</a>
+
+        </div>
+        <p class="sub-title">Already have an account? <a href="/login">Login</a></p>
+        </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>

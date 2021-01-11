@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+  <main class="form-signin">
+    <form method="post" action="/login">
+      <h2>Welcome Back!</h2>
+      <input type="email" name="username" class="form-control top" placeholder="Email" required autofocus>
+      <input type="password" name="password" class="form-control bot" placeholder="Password" required>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" style="margin-top: 10px;">Log me in!</button>
+    </form>
+    <div class="or-container">
+      <div class="line-separator"></div>
+      <div class="or-label">or</div>
+      <div class="line-separator"></div>
+    </div>
+
+    <div> <a class="btn btn-lg btn-block btn-light " href="/auth/google" role="button">
+        <i class="fab icon fa-google"></i> Login with Google</a>
+
+    </div>
+    <p class="sub-title">Don't have an account? <a href="/register">Register</a></p>
+    </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>

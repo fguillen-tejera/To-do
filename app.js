@@ -25,7 +25,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://admin-fer:Test123@cluster0.tlrmk.mongodb.net/todolistDB', {useNewUrlParser:true});
+mongoose.connect(process.env.MONGOURL, {useNewUrlParser:true});
 mongoose.set('useCreateIndex',true);
 
 const day = date.getDate();
